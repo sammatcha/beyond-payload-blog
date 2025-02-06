@@ -17,5 +17,4 @@ export const Posts: CollectionConfig = {
       required: true,
     },
   ],
-  upload: true,
 }
