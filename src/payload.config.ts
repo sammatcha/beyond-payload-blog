@@ -11,7 +11,6 @@ import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { Posts } from './collections/Posts'
 
-
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
@@ -21,6 +20,10 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
+    // livePreview: {
+    //   url: 'http://localhost:4321',
+    //   collections: ['posts'],
+    // },
   },
   collections: [Users, Media, Posts],
   editor: lexicalEditor(),

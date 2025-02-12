@@ -103,6 +103,7 @@ export interface Post {
   id: string;
   title: string;
   description: string;
+  slug?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -207,6 +208,7 @@ export interface MediaSelect<T extends boolean = true> {
 export interface PostsSelect<T extends boolean = true> {
   title?: T;
   description?: T;
+  slug?: T;
   updatedAt?: T;
   createdAt?: T;
 }
