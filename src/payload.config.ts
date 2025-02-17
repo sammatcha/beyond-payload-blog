@@ -25,6 +25,7 @@ export default buildConfig({
     //   collections: ['posts'],
     // },
   },
+  serverURL: process.env.SERVER_URL || 'http://localhost:3000',
   collections: [Users, Media, Posts],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
